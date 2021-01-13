@@ -1,0 +1,30 @@
+body {
+	color: white;
+	background-color: #CFB9A5;
+	font-family: sans-serif;
+
+}
+
+#output {
+	width: 600px;
+	height: 200px;
+	border: thick solid #96BDC6;
+	padding: 10px;
+}
+
+.button {
+	color: white;
+	background-color: #81968F;
+	border: none;
+	outline: none;
+	padding: 15px 32px;
+	font-size: 1.3em;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+	margin-bottom: 20px;
+}
+
+.button:hover {
+	color: white;
+	background-color: #96BDC6; 
+}
