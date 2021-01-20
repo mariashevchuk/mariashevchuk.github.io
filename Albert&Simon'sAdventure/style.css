@@ -26,28 +26,20 @@ body {
 	background-image:url("images/robot.png");
 }
 
-.robotRun {
-	background-image:url("images/robotRun.png");
-}
-
-.robotDead {
-	background-image:url("images/robotDead.png");
-}
-
-.robotJump {
-	background-image:url("images/robotJump.png");
-}
-
-.robotWait {
-	background-image:url("images/robotWait.png");
-}
-
 .lava {
 	background-image:url("images/lava.png");
 }
 
-.fire {
-	background-image:url("images/fire.png");
+.dRight {
+	background-image:url("images/dRight.png");
+}
+
+.dLeft {
+	background-image:url("images/dLeft.png");
+}
+
+.oil {
+	background-image:url("images/oil.png");
 }
 
 .power {

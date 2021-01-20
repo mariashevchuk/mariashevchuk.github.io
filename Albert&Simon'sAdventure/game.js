@@ -1,10 +1,10 @@
 const levels = [
 // level 0
 [ "flag", "lava",  "", "power", "",
-"", "lava", "", "hole", "",
+"oil", "lava", "", "hole", "",
 "", "bridge", "", "", "",
 "obstacle", "lava", "animate", "animate", "animate",
-"obstacle", "lava", "", "", "robot",
+"", "lava", "", "", "robot",
 ],
 
 // level 1
@@ -19,7 +19,7 @@ const levels = [
 
 const gridBoxes = document.querySelectorAll("#gameBoard div");
 var currentLevel = 0; // startin level
-var gotPower = false; // did the robot get the power?
+var gotPower = false; // did the alien get the power?
 var currentLocationOfRobot = 0;
 var currentAnimation; // allows 1 animation per level, more animations, more variables
 
@@ -42,7 +42,7 @@ for (i = 0; i < gridBoxes.length; i++) {
 
 animateBoxes = document.querySelectorAll(".animate");
 
-animateEnemy(animateBoxes, 0, "right");
+animateEnemy(animateBoxes, 0, "dRight");
 
 } // loadLevel()
 
@@ -57,15 +57,16 @@ if (boxes.length <= 0) { return;}
 
 // update images
 if (direction == "right") {
-  	boxes[index].classList.add("fire"); // fire right when get icon
+  	boxes[index].classList.add("dRight"); // fire right when get icon
 } else {
-	boxes[index].classList.add("fire"); // fire left (usually)
+	boxes[index].classList.add("dLeft"); // fire left (usually)
 } // else
 
 // remove images from other boxes
 for (i = 0; i < boxes.length; i++) {
 	if (i != index) {
-		boxes[i].classList.remove("fire"); // fire right
+		boxes[i].classList.remove("dRight"); // fire right
+		boxes[i].classList.remove("dLeft"); // fire right
 	} // if
 } // for
 
