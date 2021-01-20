@@ -1,0 +1,65 @@
+body { 	
+	background-color: black;
+}
+
+#gameBoard {
+	border: 1px solid white;
+	display: grid;
+	grid-template-columns: 160px 160px 160px 160px 160px;
+	grid-template-rows: 160px 160px 160px 160px 160px;
+	justify-content: center;
+	width: 800px;
+	height: 800px;
+	
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#gameBoard div {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.robot {
+	background-image:url("images/robot.png");
+}
+
+.lava {
+	background-image:url("images/lava.png");
+}
+
+.dRight {
+	background-image:url("images/dRight.png");
+}
+
+.dLeft {
+	background-image:url("images/dLeft.png");
+}
+
+.oil {
+	background-image:url("images/oil.png");
+}
+
+.power {
+	background-image:url("images/power.png");
+}
+
+.flag {
+	background-image:url("images/flag.png");
+}
+
+.hole {
+	background-image:url("images/hole.png");
+}
+
+.bridge {
+	background-color: #693C1B !important;
+}
+
+.obstacle {
+	background-image:url("images/obstacle.png");
+}
+
+
