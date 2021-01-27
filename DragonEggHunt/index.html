@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel='icon' href='favicon.ico' type='image/x-icon' >
+    <title>Dragon Egg Hunt</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+
+  </head>
+  
+  <body>		
+		
+  		<h1 class="title">Dragon Egg Hunt</h1>
+
+		<div id="restart" class="hidden">
+ 			<button id="restartButton" onclick="restart()" class="restart">Restart</button>
+ 			<div id="lives" class="update"></div>
+ 			<div id="level" class="update"></div>
+ 			<div id="moves" class="update"></div>
+ 		</div>
+
+		
+		<div id="position">
+			<div id="welcome" class="unhidden">
+				<h1 class="title2">Welcome</h1>
+				<p class="ptext">Five eggs were stolen from the kingdom.<br>
+				Your job is to go through a series of challenges and retrieve 
+				all five stolen eggs.<br></p>
+				<button onclick="continueGame()" class="again">Continue</button>
+			</div>
+
+			<div id="menu" class="hidden">
+				<h1 class="title2">Instructions</h1>
+				<div id="instructions"><p class="ptext">The goal of the each level 
+				is to collect an egg and get it to the portal.<br>There are obstacles that will only let you pass with the egg, <br>while others will 
+				completly block your path.<br><br>BEWARE of the 
+				evil dragons guarding the eggs!<br>If you are hit by a dragon, you will 
+				lose a life.<br>Collect gems to gain your lives back.<br>Remeber not to get greedy, gems cannot be collected if you do not need them!<br><b>DON'T 
+				swim in the forbidden water!</b><br><br>Your moves are limited, so choose your moves wisely!<br><b>GOOD LUCK!!!</b><br></p></div>
+				<button id="start" onclick="startGame()" class="controls">Start</button>
+			</div>
+			<div id="winMenu" class="hidden">
+				<h1 class="title2">You Won!</h1>
+				<p class="ptext"><b>Congratulations!</b><br>You're survived all of the challenges and retrieved the the stolen eggs!<br>Thanks for playing! Would you like to go on another adventure?</p>
+				<button onclick="continueGame()" class="again">Menu</button>
+			</div>
+			<div id="loseMenu" class="hidden">
+				<h1 class="title2">Nice Try!</h1>
+				<p class="ptext">Not all five eggs were retrived.<br>Would you like to try again?</p>
+				<button onclick="continueGame()" class="again">Menu</button>
+			</div>
+		</div>
+		
+		<div id="gameBoard">
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+				
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+		</div>
+		
+		<div class="message" id="levelup">Next level...</div>
+		<div class="message" id="evilKill">You were killed by a dragon...</div>
+		<div class="message" id="drowned">You drowned...</div>
+		<div class="message" id="movesLost">You ran out of moves...</div>
+
+	 <script src="game.js"></script>
+  </body>
+  
+</html>

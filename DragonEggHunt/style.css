@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+body { 	
+	background-color: #EBF2FA;
+	font-family: Verdana, sans-serif;
+}
+
+#gameBoard {
+	background-image: url("images/background.jpg");
+	display: grid;
+	grid-template-columns: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+	grid-template-rows: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+	justify-content: center;
+	width: 975px;
+	height: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#gameBoard div {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.update {
+	color: #5C946E;
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	font-size: 2em;
+}
+
+#level {
+	position: absolute;
+	top: 85px;
+	left: 10px;
+}
+
+#moves {
+	position: absolute;
+	top: 85px;
+	right: 10px;
+}
+
+.message {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(244, 172, 69, 0.8);
+	color: #EBF2FA;
+	font-family: 'Potta One', cursive;
+	font-size: 4em;
+	vertical-align: top;
+	text-align: center;
+	line-height: 100vh;
+}
+
+.hidden {
+	display: none;
+}
+
+.unhidden {
+	display: block;
+}
+
+.controls {
+	height: 60px;
+	width: 200px;
+	position: relative;
+	color: #EBF2FA;
+	margin: 10px;
+	padding: 6px;
+	background-color: rgba(8, 76, 97, 1);
+	font-size: 1.3em;
+	outline: none;
+}
+
+.controls:hover {
+	color: rgba(8, 76, 97, 1);
+	background-color: #EBF2FA; 
+}
+
+.again {
+	height: 60px;
+	width: 200px;
+	position: relative;
+	margin: 10px;
+	padding: 6px;
+	background-color: #8A6552;
+	color: #EBF2FA;
+	font-size: 1.3em;
+	outline: none;
+}
+
+.again:hover {
+	color: #8A6552;
+	background-color: #EBF2FA; 
+}
+
+.title {
+	text-align: center;
+	color: #5C946E;
+	font-family: 'Potta One', cursive;
+	font-size: 3em;
+}
+
+#h4 {
+	text-align: center;
+}
+
+.restart {
+	height: 60px;
+	width: 90px;
+	background-color: #8A6552;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #EBF2FA;
+	font-size: 1.3em;
+	outline: none;
+} 
+
+.restart:hover {
+	color: #EBF2FA;
+	background-color: #5C946E; 
+}
+
+#position {
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	width: 100%;
+}
+
+#menu {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #EBF2FA;
+	width: 975px;
+	height: 700px;
+	background-color: #8A6552;
+	z-index: 1;
+	padding: 30px;
+}
+
+#welcome {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #EBF2FA;
+	width: 975px;
+	height: 700px;
+	background-color: rgba(8, 76, 97, 1);
+	z-index: 1;
+	padding: 30px;
+}
+
+#winMenu {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #EBF2FA;
+	width: 975px;
+	height: 700px;
+	background-color: rgba(8, 76, 97, 1);
+	z-index: 1;
+	padding: 30px;
+}
+
+#loseMenu {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #EBF2FA;
+	width: 975px;
+	height: 700px;
+	background-color: rgba(8, 76, 97, 1);
+	z-index: 1;
+	padding: 30px;
+}
+
+.title2 {
+	font-family: 'Potta One', cursive;
+	color: #EBF2FA;
+}
+
+.ptext {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+
+
+.dragonleft {
+	background-image:url("images/dragonLeft.png");
+}
+
+.dragon {
+	background-image:url("images/dragon.png");
+}
+
+.dragonright {
+	background-image:url("images/dragon.png");
+}
+
+.dragonup {
+	background-image:url("images/dragon.png");
+}
+
+.dragondown {
+	background-image:url("images/dragon.png");
+}
+
+.dEggleft {
+	background-image:url("images/dragonEggLeft.png");
+}
+
+.dEgg {
+	background-image:url("images/dragonEggRight.png");
+}
+
+.dEggright {
+	background-image:url("images/dragonEggRight.png");
+}
+
+.dEggup {
+	background-image:url("images/dragonEggRight.png");
+}
+
+.dEggdown {
+	background-image:url("images/dragonEggRight.png");
+}
+
+.evilRight {
+	background-image:url("images/evilRight.png");
+}
+
+.evilLeft {
+	background-image:url("images/evilLeft.png");
+}
+
+.bridge {
+	background-color: #8A6552 !important;
+}
+
+.flower1 {
+	background-image:url("images/flower1.png");
+}
+
+.flower2 {
+	background-image:url("images/flower2.png");
+}
+
+.portal {
+	background-image:url("images/portal.png");
+}
+
+.egg {
+	background-image:url("images/egg.png");
+}
+
+.gem {
+	background-image:url("images/gem.png");
+}
+
+.water {
+	background-image:url("images/water.png");
+}
+
+.hole {
+	background-image:url("images/hole.png");
+}
+
+.tree1 {
+	background-image:url("images/tree1.png");
+}
+
+.tree2 {
+	background-image:url("images/tree2.png");
+}
+
+.mushroom {
+	background-image:url("images/mushroom.png");
+}
